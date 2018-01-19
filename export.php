@@ -2,7 +2,7 @@
 /**
  * 生成mysql数据字典
  */
-require_once './config.php'
+require_once './config.php';
 
 $mysql_conn = @mysqli_connect($dbserver, $dbusername, $dbpassword) or die("Mysql connect is error.");
 mysqli_select_db($mysql_conn,$database);
